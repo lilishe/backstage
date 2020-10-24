@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="zh-Hang-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>後台管理</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body>
+  <!--header-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <a class="navbar-brand" href="#">商務控制後台</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">首頁<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">列表</a>
+            </li>
+          </ul>
+        </div>
+  </nav>
+  <!--totle-->
+  <div class="container-fluid mb-4">
+        <div class="row">
+            <div class="col-lg-3 col-6">
+                <div class="card h-100 ">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="icon text-success mr-3 d-none d-sm-block">
+                            <i class="fas fa-money-bill-alt fa-3x"></i>
+                        </div>
+                        <div class="text-center w-100">
+                            <div class="h5">今日營收</div>
+                            <div class="h3">192,000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="icon text-secondary mr-3 d-none d-sm-block">
+                            <i class="fas fa-users fa-3x"></i>
+                        </div>
+                        <div class="text-center w-100">
+                            <div class="h5">會員增加</div>
+                            <div class="display-4">172</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="icon text-primary mr-3 d-none d-sm-block">
+                            <i class="fas fa-id-card fa-3x"></i>
+                        </div>
+                        <div class="text-center w-100">
+                            <div class="h5">訂單數</div>
+                            <div class="display-4">320</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="icon text-warning mr-3 d-none d-sm-block">
+                            <i class="fas fa-box fa-3x"></i>
+                        </div>
+                        <div class="text-center w-100">
+                            <div class="h5">今日營收</div>
+                            <div class="display-4">120</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+  </div>
+  <!--上限人數訂單管理-->
+  <div class="container-fluid mb-4">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card h-100 text-align-center position-relative">
+            <div class="card-body d-flex justify-content-center flex-column text-center">
+              <p>目前線上人數</p>
+              <p class="mb-0 display-2">99
+                <div class="progress mt-5 mb-0 d-flex">
+                  <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">桌機</div>
+                  <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">行動裝置</div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-header">新進訂單</div>
+            <div class="card-body d-flex flex-wrap justify-content-end">
+              <button class="btn btn-outline-secondary btn-sm mb-3">訂單管理</button>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>來源</th>
+                    <th>姓名</th>
+                    <th>貨品</th>
+                    <th class="text-center">價格</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Youtube</td>
+                    <td>喜多郎</td>
+                    <td>長角和牛排</td>
+                    <td class="text-right">3,000</td>
+                  </tr>
+                  <tr>
+                    <td>Youtube</td>
+                    <td>喜多郎</td>
+                    <td>好吃喜餅</td>
+                    <td class="text-right">2,000</td>
+                  </tr>
+                  <tr>
+                    <td>Youtube</td>
+                    <td>喜多郎</td>
+                    <td>肥嫩雞胸</td>
+                    <td class="text-right">1,500</td>
+                  </tr>
+                  <tr>
+                    <td>Youtube</td>
+                    <td>喜多郎</td>
+                    <td>親子T-Shirt</td>
+                    <td class="text-right">2,000</td>
+                  </tr>
+                </tbody>
+                <tfooter>
+                  <tr>
+                    <th colspan="2"></th>
+                    <th class="text-right">總營收</th>
+                    <th class="text-right">10,500</th>
+                  </tr>
+                </tfooter>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!--圖表-->
+  <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-header">
+                        用戶來源 
+                    </div> 
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <canvas id="barCanvas"></canvas>
+                            </div>
+                            <div class="col-lg-4">
+                                <h4>Details</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nemo, fugiat porro omnis fuga perferendis ad blanditiis fugit accusantium quod maxime earum maiores illum quas iusto. Consectetur quia vero dolores?
+                                </p>
+                                <h6>Google 來源</h6>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6>Facebook 來源</h6>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6>無法追蹤</h6>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        瀏覽器
+                    </div>
+                    <div class="card-body d-flex align-items-center">
+                        <canvas class="chart-item"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+  <!--表格-->
+  <div class="container-fluid mt-3">
+      <div class="card">
+        <div class="card-header">
+          月營運狀態
+        </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between mb-3">
+            <div class="form-inline">
+              <div class="form-group">
+                <label for="month" class="sr-only">月份</label>
+                <select name="" id="month" class="form-control form-control-sm">
+                  <option value="9">9月</option>
+                  <option value="10">10月</option>
+                  <option value="11">11月</option>
+                  <option value="12">12月</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <button type="button" class="btn btn-outline-secondary btn-sm">下載報表</button>
+              <button type="button" class="btn btn-outline-secondary btn-sm">訂單管理</button>
+            </div>
+          </div>
+          <table class="table table-responsive-sm">
+            <thead>
+              <tr>
+                <th>日期</th>
+                <th>訂單數</th>
+                <th>退費數</th>
+                <th>出貨數</th>
+                <th>有問題貨品</th>
+                <th>營業額</th>
+                <th>淨利潤</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>9/1</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td>
+              </tr>
+              <tr>
+                <td>9/2</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td>
+              </tr>
+              <tr>
+                <td>9/3</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td>
+              </tr>
+              <tr>
+                <td>9/4</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td>
+              </tr>
+              <tr>
+                <td>9/5</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td>
+              </tr>
+              <tr>
+                <td>9/6</td>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td>
+              </tr>
+            </tbody>
+            <tfooter>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="text-right">月總營收</td>
+                <td class="text-right">3,750,500</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="text-right">月總淨利潤</td>
+                <td class="text-right">2,140,500</td>
+              </tr>
+            </tfooter>
+          </table>
+        </div>
+      </div>
+  </div>
+  <!--下單-->
+  <div class="container-fluid mt-4">
+    <div class="row mb-3">
+        <div class="col-md-3">
+          <div class="input-group">
+            <input type="text" class="form-control form-control-md" placeholder="search ..." data-toggle="tooltip" data-placement="top" data-html="true"  title="<em>按下Enter快速搜尋</em>">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">GO!</button>
+            </span>
+          </div>
+        </div>
+        <div class="col-md-9 text-right my-lg-0">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eduitModal">
+            <i class="fa fa-shopping-cart"></i>
+            快速下單
+          </button>
+        </div>
+    </div>
+    <table class="table table-responsive-sm table-hover">
+        <thead>
+          <tr>
+            <th width="10">#</th>
+            <th>品項</th>
+            <th width="120">Name</th>
+            <th width="200">Email</th>
+            <th width="120">狀態</th>
+            <th class="text-right" width="120">金額</th>
+            <th width="150" class="text-center">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td class="text-primary">超纖細肥皂 1盒</td>
+            <td>Mark</td>
+            <td>Mark@mail.com</td>
+            <td>已出貨</td>
+            <td class="text-right">NT$ 899</td>
+            <td class="text-center">
+              <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-secondary">編輯</button>
+                <button type="button" class="btn btn-outline-secondary">查看</button>
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span>其他</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">操作紀錄</a>
+                  <a class="dropdown-item" href="#">資料匯出</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-danger" href="#">刪除訂單</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="table-danger">
+            <td>2</td>
+            <td class="text-primary">(保證)無泡泡沐浴乳 5罐</td>
+            <td>Jacob</td>
+            <td>Jacob@mail.com</td>
+            <td class="text-danger">缺貨</td>
+            <td class="text-right">NT$3,600</td>
+            <td class="text-center">
+              <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-secondary">編輯</button>
+                <button type="button" class="btn btn-outline-secondary">查看</button>
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span>其他</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">操作紀錄</a>
+                  <a class="dropdown-item" href="#">資料匯出</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-danger" href="#">刪除訂單</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td class="text-primary">防滑燈罩 100個</td>
+            <td>Larry</td>
+            <td>Larry@mail.com</td>
+            <td>已出貨</td>
+            <td class="text-right">NT$14,060</td>
+            <td class="text-center">
+              <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-secondary">編輯</button>
+                <button type="button" class="btn btn-outline-secondary">查看</button>
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span>其他</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">操作紀錄</a>
+                  <a class="dropdown-item" href="#">資料匯出</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-danger" href="#">刪除訂單</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="7">
+              <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            </th>
+          </tr>
+          <tr>
+            <td>...</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>....</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>....</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>...</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>...</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+    </table>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group mx-auto mb-5" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-primary">Previous</button>
+          <button type="button" class="btn btn-outline-primary active">1</button>
+          <button type="button" class="btn btn-outline-primary">2</button>
+          <button type="button" class="btn btn-outline-primary">3</button>
+          <button type="button" class="btn btn-outline-primary">Next</button>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="eduitModal" tabindex="-1"   aria-labelledby="eduitModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+  </div>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/poppermin.js" ></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/jsbootstrap.min.js"></script>
+  <script>
+        window.chartColors = {
+          red: 'rgb(255, 99, 132)',
+          orange: 'rgb(255, 159, 64)',
+          yellow: 'rgb(255, 205, 86)',
+          green: 'rgb(75, 192, 192)',
+          blue: 'rgb(54, 162, 235)',
+          purple: 'rgb(153, 102, 255)',
+          grey: 'rgb(201, 203, 207)'
+        };
+      
+        var randomScalingFactor = function () {
+          return Math.round(Math.random() * 100);
+        };
+      
+        var config = {
+          type: 'pie',
+          data: {
+            datasets: [{
+              data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+              ],
+              backgroundColor: [
+                window.chartColors.red,
+                window.chartColors.orange,
+                window.chartColors.yellow,
+                window.chartColors.green,
+                window.chartColors.blue,
+              ],
+              label: 'Dataset 1'
+            }],
+            labels: [
+              "Red",
+              "Orange",
+              "Yellow",
+              "Green",
+              "Blue"
+            ]
+          },
+          options: {
+            responsive: true
+          }
+        };
+      
+      
+        // bar
+        var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var colors = Chart.helpers.color;
+        var barChartData = {
+          labels: ["January", "February", "March", "April", "May", "June", "July"],
+          datasets: [{
+            label: 'Dataset 1',
+            backgroundColor: colors(window.chartColors.red).alpha(0.5).rgbString(),
+            borderColor: window.chartColors.red,
+            borderWidth: 1,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ]
+          }, {
+            label: 'Dataset 2',
+            backgroundColor: colors(window.chartColors.blue).alpha(0.5).rgbString(),
+            borderColor: window.chartColors.blue,
+            borderWidth: 1,
+            data: [
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor(),
+              randomScalingFactor()
+            ]
+          }]
+      
+        };
+      
+        window.onload = function () {
+          // pie
+          document.querySelectorAll('.chart-item').forEach(function (item) {
+            config.data.datasets.forEach(function (dataset) {
+              dataset.data = dataset.data.map(function () {
+                return randomScalingFactor();
+              });
+            });
+            var ctx = item.getContext("2d");
+            window.myPie = new Chart(ctx, config);
+          })
+      
+      
+          // bar
+          var barCtx = document.getElementById("barCanvas").getContext("2d");
+          window.myBar = new Chart(barCtx, {
+            type: 'bar',
+            data: barChartData,
+            options: {
+              responsive: true,
+              legend: {
+                position: 'top',
+              },
+              title: {
+                display: true,
+                text: 'Chart.js Bar Chart'
+              }
+            }
+          });
+      
+        };
+  </script>
+  <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      });
+  </script>
+</body>
+</html>
