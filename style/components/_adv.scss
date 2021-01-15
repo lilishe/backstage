@@ -1,0 +1,21 @@
+$bg-md-height:460px;
+$bg-sm-height:250px;
+$bg-sm-height-2:518px;
+.adv-bg-height,.adv-bg-height-2{
+    height: $bg-md-height;
+}
+.adv-text{
+    writing-mode: vertical-rl;
+}
+
+@media (max-width:767px){
+    .adv-bg-height{
+        height: $bg-sm-height;
+    }
+    .adv-bg-height-2{
+        height: $bg-sm-height-2;
+    }
+    .adv-text{
+        writing-mode: lr-tb;
+    }
+}
