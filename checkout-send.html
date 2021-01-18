@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/sass/all.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <title>運送</title>
+</head>
+<body>
+    <!--選單-->
+    <div class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img class="d-md-block d-none" src="images/logo-all-dark.svg" width="220" height="40" alt="">
+          <img class="d-md-none d-block" src="images/logotype-lg-dark.svg" width="115" height="18" alt="">
+        </a>
+        <a href="cart.html" class="order-md-1 ml-md-5">
+          <span class="material-icons">shopping_cart</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-md-auto ml-1">
+            <li class="nav-item">
+              <a class="nav-link text-primary font-weight-bolder" href="index.html">首頁<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary font-weight-bolder" href="product.html">甜點</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary font-weight-bolder" href="login.html">登入</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+        
+        
+      
+        
+      </nav>
+    </div>
+    <!--login-->
+    <div class="container">
+      <div class="row my-lg-6 justify-content-center">
+        <div class="col-lg-6 px-0">
+          <div class="bg-primary py-3 px-lg-4">
+            <div class="container px-lg-0 px-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h2 class="fz-36 text-secondary font-weight-bolder">運送</h2>
+                <div class="w-50 text-secondary d-flex position-relative line justify-content-between">
+                  <span class="circle rounded-circle active">
+                    <img src="images/circle-secondary.svg" alt="">
+                  </span>
+                  <span class="circle rounded-circle bg-primary"></span>
+                  <span class="circle rounded-circle bg-primary"></span>
+                </div>
+              </div>
+              <form>
+                <div class="form-row font-weight-bolder mt-3">
+                  <div class="form-group col-6">
+                    <label for="firstName" class="text-secondary fz-20">姓氏</label>
+                    <input type="email" class="form-control rounded-0 text-primary bg-secondary py-2" id="firstName" placeholder="王">
+                  </div>
+                  <div class="form-group col-6">
+                    <label for="lastName" class="text-secondary fz-20">名字</label>
+                    <input type="text" class="form-control rounded-0 text-primary bg-secondary py-2" id="lastName" placeholder="小明">
+                  </div>
+                </div>
+                <div class="form-row font-weight-bolder my-16">
+                  <div class="form-group col-md-12">
+                    <label for="telphone" class="text-secondary fz-20">電話</label>
+                    <input type="text" class="form-control rounded-0 text-primary py-2 bg-secondary" id="telphone" placeholder="0912-345-678">
+                  </div>
+                </div>
+                <div class="form-row font-weight-bolder my-16">
+                  <label for="adress" class="col-lg-12 text-secondary fz-20">地址</label>
+                  <div class="form-group col-lg-6 text-seondary">                    
+                    <select id="adress" class="form-control rounded-0 bg-secondary">
+                      <option selected>高雄市</option>
+                      <option selected>新北市</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-lg-6 text-secondary">
+                    <select id="adress" class="form-control rounded-0 bg-secondary">
+                      <option selected>新興區</option>
+                      <option>樹林區</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-lg-12">
+                    <input type="text" class="form-control rounded-0 text-primary bg-secondary" id="inputEmail4" placeholder="幸福路 520 號">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <button type="button" class="btn btn-success btn-block text-primary font-weight-bolder py-2 fz-24">下一步</button>
+        </div>
+        <div class="col-lg-4 d-lg-block d-none">
+          <div class="card rounded-0 mb-2" style="width: 18rem;">
+            <div class="card-body p-0">
+              <div class="bg-secondary py-16 fz-24 text-primary text-center">訂單摘要</div>
+              <div class="p-16">
+                <div class="d-flex text-info justify-content-between">
+                  <span>小計</span>
+                  <span>NT$ 2,700</span>
+                </div>
+                <div class="d-flex my-sm text-info justify-content-between">
+                  <span>運費</span>
+                  <span>NT$ 300</span>
+                </div>
+                <div class="d-flex text-info justify-content-between fz-20  font-weight-bolder">
+                  <span>總計</span>
+                  <span>NT$ 3,000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-0" style="width: 18rem;">
+            <div class="card-body p-0">
+              <div class="bg-secondary py-16 fz-24 text-primary text-center">購物清單</div>
+              <div class="py-16 px-2">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="list-bg-a bg-cover h-80"></div>
+                  <div class="d-flex flex-column text-info">
+                    <span>焦糖馬卡龍（2）</span>
+                    <span class="fz-20 font-weight-bolder">NT$ 900</span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between py-16">
+                  <div class="list-bg-b bg-cover h-80"></div>
+                  <div class="d-flex flex-column text-info">
+                    <span>焦糖馬卡龍（2）</span>
+                    <span class="fz-20 font-weight-bolder">NT$ 900</span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="list-bg-c bg-cover h-80"></div>
+                  <div class="d-flex flex-column text-info">
+                    <span>焦糖馬卡龍（2）</span>
+                    <span class="fz-20 font-weight-bolder">NT$ 900</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+      <div class="bg-primary">
+        <div class="container">
+          <div class="row py-4 justify-content-center align-items-center">
+            <div class="col-lg-5 mb-lg-0 mb-3 text-lg-left text-center">  
+              <img src="images/logo-light.svg" class="mr-2" width="40" height="40" alt="">
+
+              <span class="text-light fz-24">訂閱你我的甜蜜郵件</span>
+            </div>
+            <div class="col-lg-5">
+              <div class="input-group">
+                <div class="input-group-prepend w-100">
+                  <input type="email" class="form-control rounded-0 position-relative py-3 pl-5 bg-secondary" aria-label="Username" aria-describedby="basic-addon1">
+                  <span class="material-icons position-absolute text-primary ps-tb">local_post_office</span>
+                  <button class="input-group-text rounded-0 bg-success" id="basic-addon1">
+                    <span class="material-icons">arrow_forward</span>
+                  </button>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="bg-secondary py-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-5 d-flex flex-column justify-content-between">
+              <div class="mb-md-0 mb-4">
+                <img src="images/logotype-lg-dark.svg"  height="26" alt="">
+              </div>
+              <ul class="list-unstyled text-primary mb-0">
+                <li>07-1234-5678</li>
+                <li>sweetaste@email.com</li>
+                <li>800 高雄市新興區幸福路 520 號</li>
+              </ul>
+            </div>
+            <div class="col-lg-5 text-right d-lg-block d-none">
+              <img src="images/sm-today.svg" width="59" height="218" alt="">
+            </div>
+          </div>
+          <div class="footer-bottom mt-lg-3 row justify-content-center">
+            <div class="col-lg-5 my-lg-0 my-4">
+              <img src="images/ic-line@.svg" height="32" alt="">
+              <img src="images/ic-facebook.svg" height="32" alt="">
+            </div>
+            <div class="col-lg-5 text-lg-right">
+              <p>
+                © 2018 Sweetaste* All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

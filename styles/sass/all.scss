@@ -1,0 +1,15 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../sass/helper/variables';
+@import '../sass/helper/myvariables';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../sass/components/bg';
+@import '../sass/components/font-size';
+
+@import '../sass/page/index';
+@import '../sass/page/product';
+@import '../sass/page/login';
+@import '../sass/page/cart';
+@import '../sass/page/checkout-send';
+@import '../sass/page/checkout-pay';
+@import '../sass/page/checkout-ticket';
+@import '../sass/page/checkout-finish';

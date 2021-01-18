@@ -1,0 +1,129 @@
+.banner-bg{
+    background: url(https://bit.ly/2OhbMHr);
+}
+.banner-bg-b{
+    background: url('https://images.unsplash.com/photo-1512484457149-266d165a4eca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=786581a33fd6c9343735655439ce2e5a&auto=format&fit=crop&w=1380&q=80');
+}
+.main-bg-a{
+    background: url(https://bit.ly/2QiWeQW);
+}
+.main-bg-b{
+    background: url(https://bit.ly/2zKOP7w);
+}
+.main-bg-c{
+    background: url(https://bit.ly/2NcDVuB);
+}
+.main-bg-d{
+    background: url(https://bit.ly/2zBDAxX);
+}
+.main-bg-e{
+    background: url(https://bit.ly/2zL5jN7);
+}
+
+.card-bg-b{
+    background: url(https://bit.ly/2R5tqwD);
+}
+.card-bg-c{
+    background: url(https://bit.ly/2QiWeQW);
+}
+.adv-img-a{
+    background: url(https://bit.ly/2xPn7Eq);
+    max-height:460px;
+}
+.adv-img-b{
+    background: url(https://bit.ly/2zzAQS4);
+    max-height:460px;
+}
+.card-bg-a{
+    background: url(https://bit.ly/2QbVsVR);
+}
+.cart-bg-a{
+    background: url(https://bit.ly/2zBjQuq);
+}
+.cart-bg-b{
+    background: url(https://bit.ly/2zBDAxX);
+}
+.cart-bg-c{
+    background: url(https://bit.ly/2NcDVuB);
+}
+.shop-bg-a{
+    background: url(https://bit.ly/2QvsT63);
+}
+.shop-bg-b{
+    background: url(https://bit.ly/2zBDAxX);
+}
+.shop-bg-c{
+    background: url(https://bit.ly/2zKOP7w);
+}
+.list-bg-a{
+    background: url(https://bit.ly/2QvsT63);
+}
+.list-bg-b{
+    background: url(https://bit.ly/2zBDAxX);
+}
+.list-bg-c{
+    background: url(https://bit.ly/2zKOP7w);
+}
+.pay-bg{
+    background: url(https://bit.ly/2P7GhNd);
+}
+.bg-cover{
+    background-size: $bg-cover;
+    background-position: $bg-ps-center;
+}
+.card-bg-a::before{
+    content: "本日精選";
+    font-size: 24px;
+    line-height: 30px;
+    writing-mode:$text-mode;
+    background:rgba(63, 93, 69, 0.7);
+    color: $white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-bg-b::before{
+    content: "人氣推薦";
+    font-size: 24px;
+    line-height: 30px;
+    writing-mode:$text-mode;
+    background:rgba(63, 93, 69, 0.7);
+    color: $white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-bg-c::before{
+    content: "新品上市";
+    font-size: 24px;
+    line-height: 30px;
+    writing-mode:$text-mode;
+    background:rgba(63, 93, 69, 0.7);
+    color: $white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:768px){
+    .adv-img-a{
+        height: $adv-img-sm-height;
+    }
+    .adv-img-b{
+        height: $adv-img-sm-height;
+    }
+}

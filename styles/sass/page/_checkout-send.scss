@@ -1,0 +1,27 @@
+.line::after{
+    content: "";
+    width: 91%;
+    height: 1px;
+    background: $secondary;
+    top: 50%;
+    left: 8%;
+    position: absolute;
+}
+
+.line-bg::after{
+    background: $primary;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    border:1px solid $secondary;
+    z-index: 9999;
+}
+.p-16{
+    padding: 16px;
+}
+.h-80{
+    width:$list-bg-md-width;
+    height:$list-bg-md-height;
+}

@@ -1,0 +1,22 @@
+.h-496{
+    height: $banner-bg-md-height;
+}
+.h-315{
+    height: 315px;
+}
+.fz-24{
+    font-size: 24px;
+}
+.fz-20{
+    font-size: 20px;
+}
+.fz-36{
+    font-size: 36px;
+}
+
+@media (max-width:768px){
+    .h-256::before{
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

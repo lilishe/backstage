@@ -1,0 +1,67 @@
+.writing-md-mode{
+    writing-mode: $text-mode;
+}
+.letter{
+    writing-mode: $text-mode;
+    letter-spacing: 5px;
+}
+.fa-heart.hover{
+    font-weight: bolder;
+}
+.cursor{
+    cursor: pointer;
+}
+.check[type=checkbox],.hover{
+    display: none;
+}
+.check:checked ~ .hover{
+    display: block;
+}
+.check:checked ~ .heart{
+    display: none;
+
+}
+
+.h-256{
+    height: 256px;
+}
+.cart-text{
+    padding: 13px;
+    font-size: 20px;
+}
+.btn-py{
+    padding: 16px 0;
+    font-size: 24px;
+}
+.cursor{
+    cursor: pointer;
+}
+.h-256:hover::before{
+    background: rgba(255, 225, 128, 0.7);
+    color: $primary;
+}
+.h-400{
+    max-height: 414px;
+}
+.ps-tb{
+    top: 18px;
+    left: 20px;
+    z-index: 999;
+}
+@media (max-width:768px){
+    .h-496{
+       height:$banner-bg-sm-height;
+    }
+    .h-256{
+        height: 180px;
+    }
+    .adv-a-text{
+        writing-mode: none;
+    }
+    .writing-md-mode{
+        writing-mode: initial;
+    }
+    .h-400{
+        max-height: 562px;
+    }
+}

@@ -1,0 +1,11 @@
+.list-group-item + .list-group-item{
+    margin-top: 0;
+    border-top-width: 1px;
+}
+.list-group-item + .list-group-item.active{
+    margin: 0;
+}
+.ticket{
+    background:transparent;
+    color: $secondary;
+}

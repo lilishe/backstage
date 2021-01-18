@@ -1,0 +1,80 @@
+.h-110{
+    width: $shop-bg-md-height;
+    height: $shop-bg-md-height;
+}
+.shop-number{
+    width: 48px;
+    height: 48px;
+}
+.shop-container{
+    width: 144px;
+}
+.shop-lg-border{
+    border-bottom: 1px solid $secondary;
+}
+.border-color{
+    border:1px solid $secondary;
+}
+.py-16{
+    padding: 16px 0;
+}
+.pb-16{
+    padding-bottom: 16px;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.my-sm{
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+.text-sm{
+    color: $secondary;
+}
+.bg-sm{
+    background: $primary;
+}
+.shop-text{
+    color: $secondary;
+}
+
+@media (max-width:768px){
+    .h-110{
+        height: $shop-bg-sm-height;
+        width: $shop-bg-sm-width;
+        margin-right: 16px;
+    }
+    .shop-container{
+        margin-top: 8px;
+    }
+    .shop-border{
+        border-top:1px solid $secondary;
+        border-bottom:1px solid $secondary;
+    }
+    .shop-m{
+        margin-bottom: 8.5px;
+    }
+    .shop-p{
+        padding: 8.5px 0;
+    }
+    .shop-lg-border{
+        border-bottom: 0px solid $secondary;
+    }
+    .text-sm{
+        color: $primary;
+    }
+    .bg-sm{
+        background: none;
+    }
+    .shop-text{
+        background: $secondary;
+        color: $primary;
+        padding-top: 16px;
+    }
+    hr{
+        display: none;
+    }
+    .px-15{
+        padding: 0;
+    }
+}
