@@ -44,12 +44,12 @@
         
       </nav>
     </div>
-    <!--login-->
+    <!--form-->
     <div class="container">
       <div class="row my-lg-6 justify-content-center">
-        <div class="col-lg-6 px-0">
+        <div class="col-lg-6 col-12 px-0">
           <div class="bg-primary py-3 px-lg-4">
-            <div class="container px-lg-0 px-3">
+            <div class="container">
               <div class="d-flex justify-content-between align-items-center">
                 <h2 class="fz-36 text-secondary font-weight-bolder">運送</h2>
                 <div class="w-50 text-secondary d-flex position-relative line justify-content-between">
@@ -62,37 +62,51 @@
               </div>
               <form>
                 <div class="form-row font-weight-bolder mt-3">
-                  <div class="form-group col-6">
-                    <label for="firstName" class="text-secondary fz-20">姓氏</label>
-                    <input type="email" class="form-control rounded-0 text-primary bg-secondary py-2" id="firstName" placeholder="王">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="firstName" class="text-secondary h4">姓氏</label>
+                        <input type="email" class="form-control form-control-lg rounded-0 text-primary bg-secondary py-2" id="firstName" placeholder="王">
+                    </div>
                   </div>
-                  <div class="form-group col-6">
-                    <label for="lastName" class="text-secondary fz-20">名字</label>
-                    <input type="text" class="form-control rounded-0 text-primary bg-secondary py-2" id="lastName" placeholder="小明">
-                  </div>
-                </div>
-                <div class="form-row font-weight-bolder my-16">
-                  <div class="form-group col-md-12">
-                    <label for="telphone" class="text-secondary fz-20">電話</label>
-                    <input type="text" class="form-control rounded-0 text-primary py-2 bg-secondary" id="telphone" placeholder="0912-345-678">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="lastName" class="text-secondary h4">名字</label>
+                      <input type="text" class="form-control form-control-lg rounded-0 text-primary bg-secondary py-2" id="lastName" placeholder="小明">
+                    </div>
                   </div>
                 </div>
                 <div class="form-row font-weight-bolder my-16">
-                  <label for="adress" class="col-lg-12 text-secondary fz-20">地址</label>
-                  <div class="form-group col-lg-6 text-seondary">                    
-                    <select id="adress" class="form-control rounded-0 bg-secondary">
-                      <option selected>高雄市</option>
-                      <option selected>新北市</option>
-                    </select>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="telphone" class="text-secondary h4">電話</label>
+                      <input type="text" class="form-control form-control-lg rounded-0 text-primary py-2 bg-secondary" id="telphone" placeholder="0912-345-678">
+                    </div>
                   </div>
-                  <div class="form-group col-lg-6 text-secondary">
-                    <select id="adress" class="form-control rounded-0 bg-secondary">
-                      <option selected>新興區</option>
-                      <option>樹林區</option>
-                    </select>
+                </div>
+                <div class="form-row font-weight-bolder my-16">
+                  <div class="col-12">
+                    <label for="adress" class="text-secondary h4">地址</label>
                   </div>
-                  <div class="form-group col-lg-12">
-                    <input type="text" class="form-control rounded-0 text-primary bg-secondary" id="inputEmail4" placeholder="幸福路 520 號">
+                  <div class="col-6">
+                    <div class="form-group text-seondary">                    
+                      <select id="adress" class="form-control form-control-lg rounded-0 bg-secondary">
+                        <option selected>高雄市</option>
+                        <option selected>新北市</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group text-secondary">
+                      <select id="adress" class="form-control form-control-lg rounded-0 bg-secondary">
+                        <option selected>新興區</option>
+                        <option>樹林區</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control form-control-lg rounded-0 text-primary bg-secondary" id="inputEmail4" placeholder="幸福路 520 號">
+                    </div>
                   </div>
                 </div>
               </form>
@@ -100,7 +114,7 @@
           </div>
           <a href="checkout-pay.html" class="btn btn-success btn-block text-primary font-weight-bolder py-2 fz-24">下一步</a>
         </div>
-        <div class="col-lg-4 d-lg-block d-none">
+        <div class="col-4 d-lg-block d-none">
           <div class="card rounded-0 mb-2" style="width: 18rem;">
             <div class="card-body p-0">
               <div class="bg-secondary py-16 fz-24 text-primary text-center">訂單摘要</div>
