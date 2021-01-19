@@ -1,6 +1,12 @@
 .writing-md-mode{
     writing-mode: $text-mode;
 }
+.h-250{
+    min-height: 250px;
+}
+.adv-m{
+    margin: -24px 0;
+}
 .letter{
     writing-mode: $text-mode;
     letter-spacing: 5px;
@@ -40,8 +46,9 @@
     background: rgba(255, 225, 128, 0.7);
     color: $primary;
 }
-.h-400{
-    max-height: 414px;
+.h-420{
+    max-height: 420px;
+    line-height: 3;
 }
 .ps-tb{
     top: 18px;
@@ -63,5 +70,8 @@
     }
     .h-400{
         max-height: 562px;
+    }
+    .adv-m{
+        margin: 0;
     }
 }

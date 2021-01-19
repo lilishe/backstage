@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/sass/all.css">
   <link rel="icon" href="images/favicon.ico">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
   rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/sass/all.css">
   <title>首頁</title>
 </head>
 <body>
@@ -45,7 +46,7 @@
       </nav>
     </div>
     <!--banner-->
-    <div class="banner">
+    <div class="banner" data-aos="fade-up" data-aos-duration="1000">
       <div class="container px-0 mb-md-8">
         <div class="banner-bg h-496 bg-cover"></div>
         <div class="row justify-content-md-center mx-0">
@@ -66,25 +67,26 @@
       </div>
     </div>
     <!--adv-1-->
-    <div class="d-lg-none d-block text-center py-3">
-      <img src="images/sm-choose-eat-cake.svg" width="196" height="60" alt="">
-    </div>
-    <div class="adv bg-secondary mb-lg-10">
-      <div class="container">
-        <div class="row h-400">
-          <div class="col-lg-6 adv-img-a bg-cover my-lg-n2"></div>
-          <div class="col-lg-6">
+    <div class="adv-1" data-aos="fade-down" data-aos-duration="1000">
+      <div class="my-lg-11">
+        <div class="d-lg-none d-block text-center py-3">
+          <img src="images/sm-choose-eat-cake.svg" height="58" alt="">
+        </div>
+        <div class="bg-secondary">
+          <div class="container">
             <div class="row">
-              <div class="col-lg-9 writing-md-mode py-lg-7 py-3 px-lg-0 px-3">
-                <p class="mb-0">青山依舊在，幾度夕陽紅。慣看秋月春風。</p>
-                <p class="mb-0">一壺濁酒喜相逢，浪花淘盡英雄。是非成</p>
-                <p class="mb-0">轉頭空，滾滾長江東逝水，白髮漁樵江</p>
-                <p class="mb-0">古今多少事，都付笑談中。</p>
-                <p class="mb-0">是非成敗轉頭空，滾滾長江東逝水，白</p>
-                <p class="mb-0">樵江渚上，古今多少事，都付笑談中。</p>
+              <div class="col-lg-6 adv-m p-0">
+                <div class="bg-cover h-100 h-250" style="background-image: url(https://images.unsplash.com/photo-1519730722595-a5ff788dea4d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2712a33fe9b13532f0682ac4e1e749b8&auto=format&fit=crop&w=634&q=80);"></div>
               </div>
-              <div class="col-lg-3 mt-n2 text-right">
-                <img class="d-lg-block d-none" src="images/lg-choose-eat-cake.svg" width="89" height="307" alt="">
+              <div class="col-lg-6 h-420 d-flex justify-content-end">
+                <div class="writing-md-mode text-info mr-auto py-lg-7">
+                  <p class="mb-0">青山依舊在，幾度夕陽紅。慣看秋月春風。</p>
+                  <p class="mb-0">一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+                  <p class="mb-0">是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+                </div>
+                <div class="adv-m d-lg-block d-none">
+                  <img src="images/lg-choose-eat-cake.svg" width="88" alt="">
+                </div>
               </div>
             </div>
           </div>
@@ -92,25 +94,28 @@
       </div>
     </div>
     <!--adv-2-->
-    <div class="d-lg-none d-block text-center py-3">
-      <img src="images/sm-choose-eat.svg" width="196" height="60" alt="">
-    </div>
-    <div class="adv bg-secondary">
-      <div class="container">
-        <div class="row h-400 flex-row-reverse">
-          <div class="col-lg-6 adv-img-b bg-cover my-lg-n2"></div>
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-lg-9 writing-md-mode py-lg-7 py-3 px-lg-0 px-3">
-                <p class="mb-0">青山依舊在，幾度夕陽紅。慣看秋月春風。</p>
-                <p class="mb-0">一壺濁酒喜相逢，浪花淘盡英雄。是非成</p>
-                <p class="mb-0">轉頭空，滾滾長江東逝水，白髮漁樵江</p>
-                <p class="mb-0">古今多少事，都付笑談中。</p>
-                <p class="mb-0">是非成敗轉頭空，滾滾長江東逝水，白</p>
-                <p class="mb-0">樵江渚上，古今多少事，都付笑談中。</p>
+    <div class="adv-2" data-aos="fade-up" data-aos-duration="1000">
+      <div class="my-lg-11">
+        <div class="d-lg-none d-block">
+          <div class="d-lg-none d-block text-center py-3">
+            <img src="images/sm-choose-eat.svg" height="58" alt="">
+          </div>
+        </div>
+        <div class="bg-secondary">
+          <div class="container">
+            <div class="row flex-row-reverse">
+              <div class="col-lg-6 adv-m p-0">
+                <div class="bg-cover h-100 h-250" style="background-image: url(https://images.unsplash.com/photo-1497052254059-f3e0bf1a5133?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce7267675921fc7e41b5610f49750a40&auto=format&fit=crop&w=685&q=80);"></div>
               </div>
-              <div class="col-lg-3 mt-n2">
-                <img class="d-lg-block d-none" src="images/lg-choose-eat.svg" width="89" height="307" alt="">
+              <div class="col-lg-6 h-420 d-flex justify-content-end">
+                <div class="writing-md-mode text-info mr-auto py-lg-7">
+                  <p class="mb-0">青山依舊在，幾度夕陽紅。慣看秋月春風。</p>
+                  <p class="mb-0">一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+                  <p class="mb-0">是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+                </div>
+                <div class="adv-m d-lg-block d-none">
+                  <img src="images/lg-choose-eat.svg" width="88" alt="">
+                </div>
               </div>
             </div>
           </div>
@@ -118,12 +123,12 @@
       </div>
     </div>
     <!--adv3-->
-    <div class="container my-lg-8 my-3 text-center">
+    <div class="container my-lg-8 my-3 text-center"  data-aos="flip-left" data-aos-duration="1000">
       <img src="images/lg-want-eat.svg" class="d-lg-inline-block d-none text-center" width="89" height="327" alt="">
       <img src="images/sm-want-eat.svg" class="d-lg-none d-inline-block" width="226" height="60" alt="">
     </div>
     <!--cart-->
-    <div class="cart">
+    <div class="cart" data-aos="flip-right" data-aos-duration="1000">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 mb-lg-6 mb-3">
@@ -250,5 +255,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
